@@ -1,4 +1,3 @@
-
 #include "monty.h"
 
 /**
@@ -36,4 +35,3 @@ void no_command(FILE *fd, char *line, stack_t *stack, char *arg, int count)
 	free_stack(stack);
 	exit(EXIT_FAILURE);
 }
-
