@@ -1,4 +1,3 @@
-
 #include "monty.h"
 
 /**
@@ -20,4 +19,3 @@ void free_stack(stack_t *stack)
 		free(current);
 	}
 }
-
