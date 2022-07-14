@@ -1,4 +1,3 @@
-
 #include "monty.h"
 
 glob_t global = {NULL, NULL};
@@ -43,7 +42,7 @@ void handle_command(char *argv)
 				free(arguments);
 				continue;
 			}
-			else if (*arguments == '#')
+			else if (*arguments == '#' || *arguments == '-')
 				continue;
 			item = strtok(NULL, " \n\t\r");
 			result = get_opc(&stack, arguments, item, count);
@@ -62,4 +61,3 @@ void handle_command(char *argv)
 		exit(EXIT_FAILURE);
 	}
 }
-
