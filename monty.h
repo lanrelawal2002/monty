@@ -1,4 +1,3 @@
-
 #ifndef MONTY_H_
 #define MONTY_H_
 #define  _GNU_SOURCE
@@ -73,6 +72,12 @@ int get_opc(stack_t **stack, char *arg, char *item, int count);
 void _push(stack_t **stack, unsigned int line_number);
 void _pall(stack_t **stack, unsigned int line_number);
 void _pint(stack_t **stack, unsigned int line_number);
+void _pop(stack_t **stack, unsigned int line_number);
+
+/* operations- SET B */
+void _swap(stack_t **stack, unsigned int line_number);
+void _add(stack_t **stack, unsigned int line_number);
+void _nop(stack_t **stack, unsigned int line_number);
 
 /* cleaup functions */
 void free_stack(stack_t *stack);
@@ -86,4 +91,3 @@ void push_failure(FILE *fd, char *line, stack_t *stack, int count);
 void no_command(FILE *fd, char *line, stack_t *stack, char *count, int item);
 
 #endif /* MONTY_H_ */
-
